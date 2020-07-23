@@ -25,8 +25,10 @@
 </head>
 
 <body>
-
-    <h1 class="heading text-center">Javascript Quiz</h1>
+<div class="header">
+    <h1 class="text-center">Javascript Quiz</h1>
+</div>
+    
     <div id="mainQuizContainer">
         <center>
             <div id="question"></div>
@@ -47,11 +49,26 @@
 
             <button id="nextBtn" class="next-btn" onclick="loadNQuestion();">Next Question</button>
     </div>
+
+    
+<div class="resultBourd">
     <h5 class="text-center" id="displayFailPass"></h5>
     <div id="result" style="display: none;"></div>
     <h2 class="text-center" id="scoresGet" style="display: none;"></h2>
     <button id="startAgain" style="display: none;" onclick=go()>Start Again</button>
 
+</div>
+    
+    <footer>
+        <div class="footer-header">
+            <h3 class="text-center">Akhtar Hussain</h3>
+        </div>
+        <div class="footer-link">
+            <a href="http://facebook.com/akhtarhussain.official"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+            <a href="http://github.com/akhtar02"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+            <a href="http://twitter.com/akhtarofficial"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

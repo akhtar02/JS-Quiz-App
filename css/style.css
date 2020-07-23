@@ -6,7 +6,21 @@ body{
      color:  black;
      background-color: #f7f5f7 !important;
 }
-,h2,h3, span{
+
+
+.header{ 
+  margin-top: 0px;
+  background-color: #7c57ad;
+  width: 100%;
+  height: 60px;
+  
+}
+.header h1{
+  font-family: 'Lobster', cursive;
+  font-size: 45px;
+  color:#fff
+}
+h2,h3, span{
     text-align: center
 }
 h5{
@@ -32,12 +46,7 @@ b{
   color: green;
   font-size: 18px;
 }
-.heading{
-    font-family: 'Lobster', cursive;
-    font-size: 50px;
-    color: #443b8f;
-    margin-top: 30px;
-}
+
 /* #timer{
     font-family: 'Lobster', cursive;
     font-size: 28px;
@@ -83,7 +92,7 @@ span {
   font-size: 20px;
 }
 #question{
-    font-size: 21px;
+    font-size: 16px;
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 600;
   float: left;
@@ -101,7 +110,7 @@ span {
   color: #000000;
   font-family: 'Open Sans Condensed', sans-serif;
   width: 90%;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   text-align: left;
   cursor: pointer;
 }
@@ -109,6 +118,10 @@ span {
 label:hover {
   background: linear-gradient(#8791c9,  #838ec9, #7e7cc4 , #7b6dbd , #7c57ad);
   color: white;
+}
+
+.resultBourd{
+  margin-top: 120px;
 }
 
 #startAgain {
@@ -150,6 +163,26 @@ margin: auto;
 padding:  45px 10px 45px 10px;
 width:13%;
 }
+
+
+footer {
+  width: 100%;
+  background: #fff;
+  margin-top: 80px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.footer-link{
+    text-align: center;
+}
+.fa-facebook-square, .fa-github, .fa-twitter-square{
+    margin-right: 10px;
+    color: #4b42ad;
+}
+
 
 @media(max-width:500px){
   #result1,#result{
