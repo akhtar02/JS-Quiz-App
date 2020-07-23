@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,64 +20,49 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
 
     <!-- Bootstrap CSS CDN -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
+
 <body>
- 
-    <h1 class="heading">Javascript Quiz</h1>
 
-    <div class="container mt-5 pt-2">
-        <div class="row">
-            <div class="col-md-2"></div>
-            <div class="col-md-8 shadow">
-                <div id="mainQuizContainer">
-                    <center>
-                        <div id="question"></div>
-                        <br />
-                        <br />
-                        <label><input type="radio" name="option" value="1" />&nbsp;&nbsp;&nbsp; &nbsp;
-                            &nbsp;<span id="option1"></span></label>
-                        <br />
-                        <label><input type="radio" name="option" value="2" />&nbsp;&nbsp;&nbsp; &nbsp;
-                            &nbsp;<span id="option2"></span></label>
-                        <br />
-                        <label><input type="radio" name="option" value="3" />&nbsp;&nbsp;&nbsp; &nbsp;
-                            &nbsp;<span id="option3"></span></label>
-                        <br />
-                        <label><input type="radio" name="option" value="4" />&nbsp;&nbsp;&nbsp; &nbsp;
-                            &nbsp;<span id="option4"></span></label>
-                            <br />
+    <h1 class="heading text-center">Javascript Quiz</h1>
+    <div id="mainQuizContainer">
+        <center>
+            <div id="question"></div>
+            <br />
+            <br />
+            <label><input type="radio" name="option" value="1" />&nbsp;&nbsp;&nbsp; &nbsp;
+                &nbsp;<span id="option1"></span></label>
+            <br />
+            <label><input type="radio" name="option" value="2" />&nbsp;&nbsp;&nbsp; &nbsp;
+                &nbsp;<span id="option2"></span></label>
+            <br />
+            <label><input type="radio" name="option" value="3" />&nbsp;&nbsp;&nbsp; &nbsp;
+                &nbsp;<span id="option3"></span></label>
+            <br />
+            <label><input type="radio" name="option" value="4" />&nbsp;&nbsp;&nbsp; &nbsp;
+                &nbsp;<span id="option4"></span></label>
+            <br />
 
-                        <button id="nextBtn" class="next-btn" onclick="loadNQuestion();">Next Question</button>
-                </div>
-            </div>
-        <div class="col-md-2"></div>
+            <button id="nextBtn" class="next-btn" onclick="loadNQuestion();">Next Question</button>
     </div>
-    </div>
-
-    <h5 id="displayFailPass"></h5>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3"></div>
-            <div class="col-md-6 pt-5 pb-5 card">
-
-                <div id="result" style="display: none;"></div>
-                <h2 id="scoresGet" style="display: none;"></h2>
-                <button id="startAgain"style="display: none;"
-                    onclick=go()>Start Again</button>
-            </div>
-
-            <div class="col-md-3"></div>
-        </div>
-    </div>
+    <h5 class="text-center" id="displayFailPass"></h5>
+    <div id="result" style="display: none;"></div>
+    <h2 class="text-center" id="scoresGet" style="display: none;"></h2>
+    <button id="startAgain" style="display: none;" onclick=go()>Start Again</button>
 
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 <script src="js/app.js"></script>
-<script src="js/quiz.js"></script>
 
 </html>

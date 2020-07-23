@@ -145,7 +145,7 @@ var questions = [
     if (currentQuestion == totalQuestion) {
         mainQuizContainer.style.display = 'none';
         resultCont.style.display = '';
-        resultCont.textContent =  score + " " + ' / ' + " 10"
+        resultCont.textContent =  score + " " + ' / ' + "10"
         startAgain.style.display = 'block';
         displayFailPass.style.display = 'none';
         scoresGet.style.display = 'block';
@@ -157,7 +157,7 @@ var questions = [
         scoresGet.innerHTML = "<b>'Congratulation You Passed'</b>";
     }
     else {
-        scoresGet.innerHTML = "<i>'Sorry You Failed'</i>";
+        scoresGet.innerHTML = "<b><i>'Sorry You Failed'</i></b>";
     }
   
     loadQuestion(currentQuestion);
